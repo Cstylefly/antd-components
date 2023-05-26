@@ -13,10 +13,8 @@ module.exports = {
         //     'display',
         //     'margin'
         // ]
-        'function-url-quotes': 'always',
-        'selector-attribute-quotes': 'always',
         'unit-no-unknown':true,
-        'value-keyword-case':'lower'
+        'string-quotes':'single'
     },
     overrides:[
         // 若项目中存在scss文件，添加以下配置
@@ -30,5 +28,5 @@ module.exports = {
             customSyntax: 'postcss-less'
         }
     ],
-    ignoreFiles:[]
+    ignoreFiles:['**/*.js','**/*.jsx','**/*.tsx']
 }
