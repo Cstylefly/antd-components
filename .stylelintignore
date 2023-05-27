@@ -1,0 +1,6 @@
+**/*.svg
+package.json
+/build
+/public
+/dist
+/node_modules
