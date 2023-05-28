@@ -4,7 +4,8 @@ const chalk = require('chalk');
 const msgPath = process.env.HUSKY_GIT_PARAMS || process.env.GIT_PARAMS || '.git/COMMIT_EDITMSG';
 const msg = require('fs').readFileSync(msgPath, 'utf-8').trim();
 
-const commitRE = /^(feat|fix|docs|style|refactor|perf|test|workflow|build|ci|chore|release|workflow)(\(.+\))?: .{1,50}/;
+const commitRE =
+  /^(revert:)?(feat|fix|docs|style|refactor|perf|test|workflow|build|ci|chore|release|workflow)(\(.+\))?:.{1,50}/;
 
 if (!commitRE.test(msg)) {
   console.log('git commit信息校验不通过');
