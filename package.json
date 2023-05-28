@@ -31,8 +31,7 @@
     "**/*.{css,scss,vue,html,less}":"stylelint --fix",
     "**/*.{js,jsx,ts,tsx,html,css,less,scss}":"prettier --write",
     "**/*.{jsx,js,tsx,html}":[
-      "eslint --fix",
-      "git add ."
+      "eslint --fix"
     ]
   },
   "browserslist": {
