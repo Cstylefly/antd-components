@@ -1,13 +1,6 @@
 /** @format */
 
-import {
-  MenuFoldOutlined,
-  MenuUnfoldOutlined,
-  UploadOutlined,
-  UserOutlined,
-  VideoCameraOutlined,
-  SearchOutlined
-} from '@ant-design/icons';
+import { MenuFoldOutlined, MenuUnfoldOutlined, UploadOutlined, UserOutlined, VideoCameraOutlined, SearchOutlined } from '@ant-design/icons';
 import { Button, Dropdown, Layout, Menu } from 'antd';
 import React, { useState } from 'react';
 
@@ -54,11 +47,7 @@ function App() {
         minHeight: '100vh'
       }}
     >
-      <Sider
-        collapsible
-        collapsed={collapsed}
-        onCollapse={() => setCollapsed(!collapsed)}
-      >
+      <Sider collapsible collapsed={collapsed} onCollapse={() => setCollapsed(!collapsed)}>
         <div className="logo" />
         <Menu
           theme="dark"
@@ -90,15 +79,10 @@ function App() {
             padding: 0
           }}
         >
-          {React.createElement(
-            collapsed
-              ? MenuUnfoldOutlined
-              : MenuFoldOutlined,
-            {
-              className: 'trigger',
-              onClick: () => setCollapsed(!collapsed)
-            }
-          )}
+          {React.createElement(collapsed ? MenuUnfoldOutlined : MenuFoldOutlined, {
+            className: 'trigger',
+            onClick: () => setCollapsed(!collapsed)
+          })}
         </Header>
         <Content
           className="site-layout-background"
@@ -115,9 +99,7 @@ function App() {
               &nbsp;
               <Button type="primary">primary按钮</Button>
               &nbsp;
-              <Button type="ghost">
-                ghost按钮（背景色为透明的）
-              </Button>
+              <Button type="ghost">ghost按钮（背景色为透明的）</Button>
               &nbsp;
               <Button type="dashed">dashed按钮</Button>
               &nbsp;
@@ -154,11 +136,7 @@ function App() {
                 round按钮
               </Button>
               &nbsp;
-              <Button
-                type="primary"
-                shape="circle"
-                icon={<SearchOutlined />}
-              />
+              <Button type="primary" shape="circle" icon={<SearchOutlined />} />
               circle按钮
             </div>
             <br />
@@ -169,11 +147,7 @@ function App() {
                 loading按钮
               </Button>
               &nbsp;
-              <Button
-                type="primary"
-                onClick={handleRequest}
-                shape="round"
-              >
+              <Button type="primary" onClick={handleRequest} shape="round">
                 模拟请求
               </Button>
             </div>
@@ -233,9 +207,7 @@ function App() {
             <br />
             <h1>Dropdown.Button</h1>
             <div>
-              <Dropdown.Button overlay={menu}>
-                Dropdown.Button.Actions
-              </Dropdown.Button>
+              <Dropdown.Button overlay={menu}>Dropdown.Button.Actions</Dropdown.Button>
             </div>
           </>
         </Content>

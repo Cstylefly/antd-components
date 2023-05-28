@@ -8,11 +8,14 @@ import React from 'react';
 import { Button } from 'antd';
 
 function App() {
-  const appName = 'jack';
-
   return (
     <>
-      <Button className={'das'} onClick={() => {}}>
+      <Button
+        type={'primary'}
+        onClick={() => {
+          console.log('button');
+        }}
+      >
         测试button
       </Button>
     </>
