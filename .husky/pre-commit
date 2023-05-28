@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-yarn lint:pre-start
-git add
+yarn lint:pre-start --allow-empty
+git add .
