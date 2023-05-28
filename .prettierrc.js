@@ -4,7 +4,7 @@ module.exports = {
     //使用两个空格缩进
     tabWidth: 2,
     //每行的字符长度（超过后就换行）
-    printWidth: 60,
+    printWidth: 120,
     semi: true,
     //大括号内前后需要空格
     bracketSpacing: true,

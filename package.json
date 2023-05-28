@@ -19,7 +19,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "prepare":"npx husky install",
-    "lint:pre-commit": "npx lint-staged"
+    "lint:pre-commit": "npx lint-staged",
+    "lint:commit-msg": "node ./scripts/verityCommitMsg.js"
   },
   "eslintConfig": {
     "extends": [
