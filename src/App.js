@@ -1,3 +1,5 @@
+/** @format */
+
 import React from 'react';
 import { Button } from 'antd';
 
@@ -11,11 +13,13 @@ function App() {
   };
 
   const name = x => {
-    if (a == quotePropsDemo) {
+    if (true) {
       console.log(a);
     }
     console.log('dasfsa');
   };
+
+  const j = 1;
 
   const handleClick = () => 'a';
 
