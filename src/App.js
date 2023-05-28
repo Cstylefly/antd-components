@@ -13,8 +13,8 @@ function App() {
   };
 
   const name = x => {
-    if (true) {
-      console.log(a);
+    if (a == quotePropsDemo) {
+      console.log('dsaf');
     }
     console.log('dasfsa');
   };

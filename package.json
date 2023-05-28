@@ -18,9 +18,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint:css": "stylelint  **/*.{css,scss,vue,html,less} --fix",
-    "prettier:test": "prettier --write **/*.{js,jsx,html,css,less,scss} ",
-    "eslint:test": "npx eslint  **/*.{js,jsx,ts,tsx,html} --fix"
+    "prepare":"npx husky install",
+    "lint:pre-start": "npx lint-staged"
   },
   "eslintConfig": {
     "extends": [
@@ -28,12 +27,8 @@
       "react-app/jest"
     ]
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
   "lint-staged": {
+    "**/*.{css,scss,vue,html,less}":"stylelint --fix",
     "**/*.{js,jsx,ts,tsx,html,css,less,scss}":"prettier --write",
     "**/*.{jsx,js,tsx,html}":[
       "eslint --fix",
