@@ -14,7 +14,7 @@ module.exports = {
     //     'margin'
     // ]
     'unit-no-unknown': true,
-    'string-quotes': 'single',
+    'selector-id-pattern':'^([a-z][a-z0-9]*)([-|_][a-z0-9]+)*$' // 修改了stylelint-config-standard中id只可匹配短横线（可匹配短横线或者下划线）
   },
   overrides: [
     // 若项目中存在scss文件，添加以下配置
