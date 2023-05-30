@@ -12,6 +12,7 @@ function App() {
 
   useEffect(() => {
     setDomRoot(document.getElementById('root-div'));
+    console.log('测试');
   }, []);
 
   const fetchData = () => {
