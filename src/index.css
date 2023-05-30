@@ -24,3 +24,7 @@ code {
   background: #999;
   overflow: auto;
 }
+
+.editor-area {
+  min-height: 500px;
+}

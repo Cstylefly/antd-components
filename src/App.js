@@ -8,7 +8,7 @@ import 'braft-editor/dist/index.css';
 export default class EditorDemo extends React.Component {
   state = {
     // 创建一个空的editorState作为初始值
-    editorState: BraftEditor.createEditorState(null)
+    editorState: BraftEditor.createEditorState(`<p>Hello <b>World!</b></p>`)
   };
 
   async componentDidMount() {
