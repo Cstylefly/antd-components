@@ -1,3 +1,5 @@
+/** @format */
+
 module.exports = {
   env: {
     browser: true,
@@ -7,7 +9,7 @@ module.exports = {
   extends: [
     'plugin:react/recommended',
     'standard',
-    "plugin:prettier/recommended" // eslint-plugin-prettier  eslint-config-prettier 下载这两个插件解决prettier和eslint配置的覆盖的问题
+    'plugin:prettier/recommended' // eslint-plugin-prettier  eslint-config-prettier 下载这两个插件解决prettier和eslint配置的覆盖的问题
   ],
   parserOptions: {
     ecmaFeatures: {
@@ -15,12 +17,16 @@ module.exports = {
     },
     ecmaVersion: 'latest'
   },
-  plugins: [
-    'react'
-  ],
+  plugins: ['react'],
   rules: {
     'no-unused-vars': 'warn', // 定义未使用的变量
     'no-console': 'off',
-    'eqeqeq':'warn'
+    eqeqeq: 'warn',
+    'prettier/prettier': [
+      'error',
+      {
+        endOfLine: 'auto'
+      }
+    ]
   }
-}
+};

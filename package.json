@@ -21,7 +21,7 @@
     "prepare":"npx husky install",
     "lint:pre-commit": "npx lint-staged",
     "lint:commit-msg": "node ./scripts/verityCommitMsg.js",
-    "lint:test": "npx eslint **/*.{jsx,js,html,ts,tsx} --fix"
+    "lint:test": "npx eslint \"**/*.{jsx,js,html,ts,tsx}\" --fix"
   },
   "eslintConfig": {
     "extends": [
