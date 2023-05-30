@@ -27,6 +27,17 @@ module.exports = {
       {
         endOfLine: 'auto'
       }
+    ],
+    'no-useless-return': 'off',
+    camelcase: [
+      'warn',
+      {
+        allow: ['^UNSAFE_'],
+        properties: 'never',
+        ignoreGlobals: true,
+        ignoreImports: true,
+        ignoreDestructuring: true
+      }
     ]
   }
 };
