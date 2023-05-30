@@ -8,9 +8,13 @@
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
     "antd": "^4.21.5",
+    "braft-editor": "^2.3.9",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-fast-marquee": "^1.6.0",
+    "react-quill": "^2.0.0",
     "react-scripts": "5.0.1",
+    "react-text-loop-next": "^0.0.3",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -18,7 +22,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "prepare":"npx husky install",
+    "prepare": "npx husky install",
     "lint:pre-commit": "npx lint-staged",
     "lint:commit-msg": "node ./scripts/verityCommitMsg.js",
     "lint:test": "npx eslint \"**/*.{jsx,js,html,ts,tsx}\" --fix"
@@ -30,9 +34,9 @@
     ]
   },
   "lint-staged": {
-    "**/*.{css,scss,vue,html,less}":"stylelint --fix",
-    "**/*.{js,jsx,ts,tsx,html,css,less,scss}":"prettier --write",
-    "**/*.{jsx,js,tsx,html}":[
+    "**/*.{css,scss,vue,html,less}": "stylelint --fix",
+    "**/*.{js,jsx,ts,tsx,html,css,less,scss}": "prettier --write",
+    "**/*.{jsx,js,tsx,html}": [
       "eslint --fix"
     ]
   },
