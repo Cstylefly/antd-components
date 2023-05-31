@@ -38,6 +38,7 @@ module.exports = {
         ignoreImports: true,
         ignoreDestructuring: true
       }
-    ]
+    ],
+    'react/prop-types': 'off'
   }
 };
